@@ -22,14 +22,19 @@ namespace WorkingTime.Web.Controllers
 
         public IActionResult Index()
         {
-            var employees = client.GetEmployees().Result;
-
-            var viewModel = new EmployeeViewModel()
+            try
             {
-                Employees = employees
-            };
-
-            return View(viewModel);
+                var employees = client.GetEmployees().Result;
+                var viewModel = new EmployeeViewModel()
+                {
+                    Employees = employees
+                };
+                return View(viewModel);
+            } catch (Exception ex)
+            {
+                ViewBag.Error = "API Not available. Please contact support for assistance.";
+                return View("APINotAvailable");
+            }
         }
        
         public IActionResult EmployeeMonthsWorked(int employeeId)
