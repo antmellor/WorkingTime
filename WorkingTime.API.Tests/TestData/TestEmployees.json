@@ -1,0 +1,132 @@
+[
+  {
+    "EmployeeId": 1,
+    "FirstName": "Testy",
+    "Surname": "McTestFace",
+    "EmployeeShifts": [
+      {
+        "EmployeeId": 1,
+        "ShiftId": 1,
+        "Shift": {
+          "ShiftId": 1,
+          "ShiftStart": "2016-11-11T09:00:00",
+          "ShiftEnd": "2016-11-11T17:00:00",
+          "ShiftName": "Morning 9-17"
+        }
+      },
+      {
+        "EmployeeId": 1,
+        "ShiftId": 2,
+        "Shift": {
+          "ShiftId": 2,
+          "ShiftStart": "2016-11-12T10:00:00",
+          "ShiftEnd": "2016-11-12T14:00:00",
+          "ShiftName": "Morning 10-14"
+        }
+      },
+      {
+        "EmployeeId": 1,
+        "ShiftId": 4,
+        "Shift": {
+          "ShiftId": 4,
+          "ShiftStart": "2016-11-13T09:00:00",
+          "ShiftEnd": "2016-11-13T17:00:00",
+          "ShiftName": "Morning 9-17"
+        }
+      },
+      {
+        "EmployeeId": 1,
+        "ShiftId": 6,
+        "Shift": {
+          "ShiftId": 6,
+          "ShiftStart": "2016-11-15T09:00:00",
+          "ShiftEnd": "2016-11-15T17:00:00",
+          "ShiftName": "Morning 9-17"
+        }
+      },
+      {
+        "EmployeeId": 1,
+        "ShiftId": 8,
+        "Shift": {
+          "ShiftId": 8,
+          "ShiftStart": "2016-12-14T09:00:00",
+          "ShiftEnd": "2016-12-14T17:00:00",
+          "ShiftName": "Morning 9-17"
+        }
+      }
+    ]
+  },
+  {
+    "EmployeeId": 2,
+    "FirstName": "Harry",
+    "Surname": "Potter",
+    "EmployeeShifts": [
+      {
+        "EmployeeId": 2,
+        "ShiftId": 1,
+        "Shift": {
+          "ShiftId": 1,
+          "ShiftStart": "2016-11-11T09:00:00",
+          "ShiftEnd": "2016-11-11T17:00:00",
+          "ShiftName": "Morning 9-17"
+        }
+      },
+      {
+        "EmployeeId": 2,
+        "ShiftId": 4,
+        "Shift": {
+          "ShiftId": 4,
+          "ShiftStart": "2016-11-13T09:00:00",
+          "ShiftEnd": "2016-11-13T17:00:00",
+          "ShiftName": "Morning 9-17"
+        }
+      },
+      {
+        "EmployeeId": 2,
+        "ShiftId": 5,
+        "Shift": {
+          "ShiftId": 5,
+          "ShiftStart": "2016-11-14T10:00:00",
+          "ShiftEnd": "2016-11-14T14:00:00",
+          "ShiftName": "Morning 10-14"
+        }
+      },
+      {
+        "EmployeeId": 2,
+        "ShiftId": 6,
+        "Shift": {
+          "ShiftId": 6,
+          "ShiftStart": "2016-11-15T09:00:00",
+          "ShiftEnd": "2016-11-15T17:00:00",
+          "ShiftName": "Morning 9-17"
+        }
+      },
+      {
+        "EmployeeId": 2,
+        "ShiftId": 7,
+        "Shift": {
+          "ShiftId": 7,
+          "ShiftStart": "2016-12-13T09:00:00",
+          "ShiftEnd": "2016-12-13T17:00:00",
+          "ShiftName": "Morning 9-17"
+        }
+      },
+      {
+        "EmployeeId": 2,
+        "ShiftId": 8,
+        "Shift": {
+          "ShiftId": 8,
+          "ShiftStart": "2016-12-14T09:00:00",
+          "ShiftEnd": "2016-12-14T17:00:00",
+          "ShiftName": "Morning 9-17"
+        }
+      }
+    ]
+  },
+  {
+    "EmployeeId": 3,
+    "FirstName": "Anthony",
+    "Surname": "Mellor",
+    "EmployeeShifts": []
+  }
+]

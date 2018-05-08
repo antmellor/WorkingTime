@@ -1,0 +1,18 @@
+﻿@model MonthYearViewModel
+<script>
+    $("#SelectedMonthYear").on("change", function () {
+        var monYear = $(this).val();
+        var empId = $("#SelectedEmployeeId").val();
+        if (monYear != null && monYear != "") {
+            $("#shiftPartialView").load("/WorkingTime/EmployeeShiftsInMonth",
+                { employeeId: empId, monthYear: monYear });
+        } else {
+            // clear the shift grid
+            $("#shiftPartialView").empty();
+        }
+    });
+</script>
+<div>
+    @Html.LabelFor(m => m.SelectedMonthYear, new { @class = "control-label" })
+    @Html.DropDownListFor(m => m.SelectedMonthYear, Model.MonthSelectList, "Select Work Month", new { @class = "form-control" })
+</div>

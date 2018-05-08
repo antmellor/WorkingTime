@@ -1,0 +1,43 @@
+﻿@model EmployeeViewModel
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#SelectedEmployeeId").on("change", function () {
+            var empId = $(this).val();
+            var empName = $("#SelectedEmployeeId option:selected").text();
+            var monYear = $("#SelectedMonthYear").val();
+            $("#monthPartialView").load("/WorkingTime/EmployeeMonthsWorked",
+                { employeeId: empId });
+            if (empId != "") {
+                $("#empIdLabel").text('Employee ID: ' + empId);
+                $("#empNameLabel").text('Employee Name: ' + empName);
+            } else {
+                $("#empIdLabel").text('');
+                $("#empNameLabel").text('');
+                $("#shiftPartialView").empty();
+            }
+            if (monYear == "" || monYear == null)
+                $("#shiftPartialView").empty();
+        });
+    });
+</script>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            @Html.LabelFor(m => m.SelectedEmployeeId, new { @class = "control-label" })
+            @Html.DropDownListFor(m => m.SelectedEmployeeId, Model.EmployeeSelectList, "Select Employee", new { @class = "form-control" })
+        </div>
+        <div class="col-md-4">
+            <div id="monthPartialView"></div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <div>
+        <label id="empIdLabel" name="empIdLabel"></label>
+        <label id="empNameLabel" name="empNameLabel"></label>
+    </div>
+    <div id="shiftPartialView" class="row">
+    </div>
+</div>

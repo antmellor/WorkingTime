@@ -1,0 +1,26 @@
+[
+  {
+    "shiftId": 1,
+    "shiftStart": "2016-11-11T09:00:00",
+    "shiftEnd": "2016-11-11T17:00:00",
+    "shiftName": "Morning 9-17"
+  },
+    {
+        "shiftId": 2,
+        "shiftStart": "2016-11-12T10:00:00",
+        "shiftEnd": "2016-11-12T14:00:00",
+        "shiftName": "Morning 10-14"
+    },
+    {
+        "shiftId": 4,
+        "shiftStart": "2016-11-13T09:00:00",
+        "shiftEnd": "2016-11-13T17:00:00",
+        "shiftName": "Morning 9-17"
+    },
+    {
+        "shiftId": 6,
+        "shiftStart": "2016-11-15T09:00:00",
+        "shiftEnd": "2016-11-15T17:00:00",
+        "shiftName": "Morning 9-17"
+    }
+]
