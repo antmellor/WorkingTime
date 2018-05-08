@@ -103,11 +103,8 @@ namespace WorkingTime.Web.Tests
             controller = new WorkingTimeController(client);
 
             var result = controller.EmployeeShiftsInMonth(1, null);
-
             var viewResult = Assert.IsType<PartialViewResult>(result);
-            var model = Assert.IsAssignableFrom<EmployeeShiftViewModel>(viewResult.ViewData.Model);
-            Assert.Empty(model.ShiftsForMonth);
-            Assert.Equal(0, model.TotalHours);
+            Assert.Null(viewResult.ViewData.Model);
         }
     }
 
